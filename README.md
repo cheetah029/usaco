@@ -1,3 +1,3 @@
 # usaco
 
-My learning path to USACO competitions
+My learning path for USACO contests.
