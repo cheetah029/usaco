@@ -33,7 +33,8 @@ void ParseIn() {
     }
 }
 
-void MinDiff(vector<int> weights, long long int weightA, long long int weightB, long long int* res) {
+void MinDiff(vector<int> weights, long long int weightA, long long int weightB,
+             long long int *res) {
     int curWeight = 0;
     long long int diff = 0;
 
@@ -49,6 +50,7 @@ void MinDiff(vector<int> weights, long long int weightA, long long int weightB, 
 
     curWeight = weights[weights.size() - 1];
     weights.pop_back();
+
     MinDiff(weights, weightA + curWeight, weightB, res);
     MinDiff(weights, weightA, weightB + curWeight, res);
 }
